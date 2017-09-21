@@ -1,2 +1,8 @@
 Barnyard2 :
 https://www.vultr.com/docs/setup-barnyard-2-with-snort
+
+
+
+commands :
+sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i wlan0
+sudo barnyard2 -c /etc/snort/barnyard2.conf -d /var/log/snort -f snort.u2 -w /var/log/snort/barnyard2.bookmark -g snort -u snort
